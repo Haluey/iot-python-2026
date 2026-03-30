@@ -180,7 +180,7 @@ IoT 개발자 파이썬 리포지토리
 
 ### 파이썬 기본 학습
 
-10. 라이브러리 사용 계속
+10. 라이브러리 사용 계속 - [소스](./day03/ex11_out_package.py)
     - 타언어의 경우 웹 검색, 다운로드, 개발위치 설치나 복사
     - CPU 아키텍처에 따라 32bit(x86), 64bit 마다 설치방법 상이
     - 파이썬은 자신만의 패키지 관리자(Package Manager : pip) 사용
@@ -206,12 +206,13 @@ IoT 개발자 파이썬 리포지토리
 
     > pip uninstall 패키지명
     ```
+    - CSV 라이브러리 - [소스](./day03/ex12_csv_package.py)
 
-11. 기타 자료구조
+11. 기타 자료구조 - [소스](./day03/ex13_datastruct.py)
     - 리스트 외 튜플, 딕셔너리, 셋 등
     - 각 자료구조 형태를 구분
 
-12. main
+12. main - [소스](./day03/ex14_main.py)
     - 파이썬은 main함수가 필요없음
     - 여러 파일 중 시작점(Entry point)을 지칭할 때는 사용(필수 아님)
     - `__name__` 특수 변수를 사용
@@ -247,7 +248,7 @@ IoT 개발자 파이썬 리포지토리
     - 가상환경은 github에 올리지 말 것
         - .gitignore에 가상환경 폴더명 추가할 것
 
-14. 객체지향
+14. 객체지향 - [소스1](./day03/ex15_oop.py) ~ [소스4](./day03/ex18_encapsule.py)
     - C++의 객체지향, 클래스와 동일
     - C++과 달리 new 안씀. 변수 등 선언에 제약사항이 많이 없음
     - 클래스 내의 모든 함수의 첫번째 파라미터는 `self`로 시작. self는 C++의 this와 동일
@@ -255,7 +256,7 @@ IoT 개발자 파이썬 리포지토리
     - 파이썬의 철학 : `막지 말고, 알아서 지켜라`
     - public(일반 변수), private(__로 변수 선언), protected(_로 변수 선언). C++처럼 접근제한자를 많이 사용 안 함
 
-15. 예외처리
+15. 예외처리 - [소스](./day03/ex19_exception.py)
     - 비정상 종료를 막는 기능
     - try ~ except ~ finally 로 구분지어서 사용 (else는 잘 사용 안 함)
     - except를 여러번 쓸 수 있으나, `except Exception as e` 하나로 통일해도 무방
@@ -288,7 +289,7 @@ IoT 개발자 파이썬 리포지토리
     - Project Jupyter에서 시작
     - 확장에서 Jupyter 설치
 
-- 사용법
+- 사용법 - [노트북](./day03/ex20_jupyter_start.ipynb)
     - 명령 팔레트(Ctrl + Shift + P)
 
         ![alt text](image-11.png)
@@ -308,3 +309,30 @@ IoT 개발자 파이썬 리포지토리
     - Ctrl + Enter : 마크다운셸은 빠져나오기, 코드셸을 실행
     - l : 셸 선택모드에서 라인번호 표시 토글
     - dd : 셸 선택모드에서 셸 삭제
+
+- 사용처
+    - 웹 상에서 동작하므로 많은 서비스를 지원. 로컬 컴퓨터보다 속도 느림
+    - [Github Codespace](https://github.com/features/codespaces) - 기존 리포지토리와 연결 지원 (무료일 경우 한 달 140시간)
+    - [Google Colab](https://colab.google.com/) - 구글에서 지원하는 노트북 서비스. 구글 드라이브와 연결 (90분 연결 무료, 기능 제약적)
+
+### 데이터 분석 기초
+
+- 분석용 기초 이론 - [노트북](./day03/ex21_dataprocess.ipynb)
+    - 리스트, 튜플, 딕셔너리
+    - 리스트 컴프리헨션
+    - 파일 입출력
+    - Numpy
+
+## 4일차
+
+### 데이터 분석 기초
+
+- 분석용 기초 이론 계속 - [노트북]()
+    - Numpy
+    - Pandas
+    - Matplotlib
+    - Seaborn
+    - Folium
+    - WordCloud
+    - 기초 통계
+    - 데이터 전처리
