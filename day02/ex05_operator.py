@@ -48,6 +48,7 @@ print('나이는 20세 이상이거나, 면허증 소지?', age >= 20 or is_lice
 fruits = ['사과', '바나나', '망고', '포도']
 sentence = '파이썬은 쉬워요!'
 
+# in, not in
 print('과일 중 바나나 존재여부 :', '바나나' in fruits)
 print('과일 중 수박 존재여부 :', '수박' in fruits)
 print("문장 내 '파이썬' 단어 여부 :", '파이썬' in sentence)
